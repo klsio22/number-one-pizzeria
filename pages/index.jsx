@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Featured from '../components/Featured';
 //import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
@@ -11,9 +12,8 @@ export default function Home() {
         <meta name='description' content='Top one pizzeria' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
+      <Featured/>
       homepage
-      {/* <Image src='/img/logo.png' alt='logo-site' layout='fill'></Image> */}
-
     </div>
   );
 }
