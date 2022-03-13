@@ -7,9 +7,7 @@ function Loyout({ children }) {
     <div>
       <>
         <NavBar />
-
         {children}
-
         <Footer />
       </>
     </div>
