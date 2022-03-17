@@ -3,6 +3,8 @@ import Featured from '../components/Featured';
 //import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
+// eslint-disable-next-line
+import "swiper/css/bundle";
 
 export default function Home() {
   return (
