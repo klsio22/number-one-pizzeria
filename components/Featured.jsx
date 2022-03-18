@@ -5,36 +5,30 @@ import 'swiper/css';
 import { Navigation } from 'swiper';
 
 export default function Featured() {
+  const images = [
+    '/img/featured.png',
+    '/img/featured2.png',
+    '/img/featured3.png',
+  ];
+
   return (
     <Swiper
-    navigation={true} modules={[Navigation]} className={styles.container}
+      navigation={true}
+      modules={[Navigation]}
+      className={styles.container}
     >
-      <SwiperSlide>
-        <Image
-          src={'/img/featured.png'}
-          alt='Images pizzas'
-          layout='fill'
-          objectFit='contain'
-        />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <Image
-          src={'/img/featured2.png'}
-          alt='Images pizzas'
-          layout='fill'
-          objectFit='contain'
-        />
-      </SwiperSlide>
-
-      <SwiperSlide>
-        <Image
-          src={'/img/featured2.png'}
-          alt='Images pizzas'
-          layout='fill'
-          objectFit='contain'
-        />
-      </SwiperSlide>
+      {images.map((img, i) => (
+        <div className={styles.imgContainer} key={i}>
+          <SwiperSlide>
+            <Image
+              src={img}
+              alt='Images pizzas'
+              layout='fill'
+              objectFit='contain'
+            />
+          </SwiperSlide>
+        </div>
+      ))}
     </Swiper>
   );
 }
