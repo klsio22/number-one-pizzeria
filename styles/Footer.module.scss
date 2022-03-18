@@ -8,21 +8,20 @@
     position: relative;
     display: flex;
 
-
     .card {
       flex: 1;
       padding: 0 20px;
     }
-  
+
     .title {
       font-size: 18px;
       color: #b7903c;
     }
-  
+
     .text {
       color: #d3d3d3;
     }
-  
+
     .numberOne {
       color: #d3d3d3;
     }
@@ -31,8 +30,6 @@
   .item:last-child {
     flex: 2;
     padding: 50px;
-    justify-content:space-between
+    justify-content: space-between;
   }
-  
-  
 }
