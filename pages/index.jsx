@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Featured from '../components/Featured';
-//import Image from 'next/image';
 import styles from '../styles/Home.module.scss';
 
 // eslint-disable-next-line
 import "swiper/css/bundle";
+
+import PizzzList from '../components/PizzaList';
 
 export default function Home() {
   return (
@@ -15,7 +16,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Featured/>
-      homepage
+      <PizzzList/>
     </div>
   );
 }
