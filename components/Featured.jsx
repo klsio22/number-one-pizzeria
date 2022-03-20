@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import styles from '../styles/Featured.module.scss';
 import 'swiper/css';
-import { Navigation } from 'swiper';
+import { Navigation, Keyboard } from 'swiper';
 
 export default function Featured() {
   const images = [
@@ -13,13 +13,22 @@ export default function Featured() {
 
   return (
     <Swiper
+      cssMode={true}
       navigation={true}
-      modules={[Navigation]}
-      className={styles.container}
+      grabCursor={true}
+      keyboard={{
+        enabled: true,
+      }}
+      modules={[Navigation, Keyboard]}
+      id={styles.container}
     >
-      {images.map((img, i) => (
-        <div className={styles.imgContainer} key={i}>
-          <SwiperSlide>
+      <div className={styles.itemContainer}>
+        {images.map((img, i) => (
+          <SwiperSlide
+            className={styles.imgContainer}
+            key={i}
+            style={{ padding: '10px' }}
+          >
             <Image
               src={img}
               alt='Images pizzas'
@@ -27,8 +36,8 @@ export default function Featured() {
               objectFit='contain'
             />
           </SwiperSlide>
-        </div>
-      ))}
+        ))}
+      </div>
     </Swiper>
   );
 }
