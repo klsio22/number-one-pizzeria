@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import styles from '../styles/PizzaCard.module.scss';
+import styles from '/styles/PizzaCard.module.scss';
 export default function PizzaCard() {
   return (
     <div className={styles.container}>

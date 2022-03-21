@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/PazzaList.module.scss';
+import styles from '/styles/PazzaList.module.scss';
 import PizzaCard from './PizzaCard';
 
 export default function PizzzList() {
