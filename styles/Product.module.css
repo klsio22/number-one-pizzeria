@@ -1,0 +1,115 @@
+.container {
+  height: calc(100vh - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .left .imgConteiner {
+  width: 80%;
+  height: 80%;
+  position: relative;
+}
+
+.container .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .right .price {
+  color: #d1411e;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 1px solid #d1411e;
+}
+
+.container .right .sizes {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .right .sizes .size {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .right .sizes .size:nth-child(2) {
+  width: 40px;
+  height: 40px;
+}
+
+.container .right .sizes .size:last-child {
+  height: 50px;
+  width: 50px;
+}
+
+.container .right .sizes .size .number {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  background-color: teal;
+  font-size: 12px;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+
+.container .right .ingredients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.container .right .ingredients .option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container .right .ingredients .checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.container .right .add {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.container .right .add .quantity {
+  width: 50px;
+  height: 30px;
+}
+
+.container .right .add .button {
+  height: 30px;
+  background-color: #d1411e;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+/*# sourceMappingURL=Product.module.css.map */
