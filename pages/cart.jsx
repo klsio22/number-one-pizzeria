@@ -1,0 +1,23 @@
+import React, { Component } from 'react';
+import styles from '/styles/Cart.module.scss';
+export default class cart extends Component {
+  render() {
+    return (
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <table className={styles.table}>
+            <tr className={styles.tr}>
+              <th>Product</th>
+              <th>Name</th>
+              <th>Extras</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+            </tr>
+          </table>
+        </div>
+        <div className={styles.right}>cart</div>
+      </div>
+    );
+  }
+}
