@@ -19,9 +19,7 @@
     flex: 3;
   }
 
-  .item:last-child {
-    justify-content: flex-end;
-  }
+
 
   .callButton {
     background-color: #ffffff;
@@ -53,6 +51,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    .logo {
+      padding: 0 10px !important;
+    }
 
     .listItem {
       margin: 20px;
