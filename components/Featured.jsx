@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import styles from '/styles/Featured.module.scss';
 import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard } from 'swiper';
+import styles from '/styles/Featured.module.scss';
 
 export default function Featured() {
   const images = [

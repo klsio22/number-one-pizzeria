@@ -15,11 +15,20 @@
     align-items: center;
     justify-content: center;
   }
-  .item:nth-child(2) {
-    flex: 3;
+
+  .item:nth-child(1) {
+    @media screen and(max-width:480px) {
+      flex: 3;
+    }
   }
 
+  .item:nth-child(2) {
+    flex: 3;
 
+    @media screen and(max-width:480px) {
+      display: none;
+    }
+  }
 
   .callButton {
     background-color: #ffffff;
