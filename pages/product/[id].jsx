@@ -102,9 +102,10 @@ export default function Product() {
               defaultValue={1}
               className={styles.quantity}
             />
-            <button className={styles.button}>Add to Cart</button>
+            <a href={'/cart'}>
+              <button className={styles.button}>Add to Cart</button>
+            </a>
           </div>
-          
         </div>
       </div>
     </div>

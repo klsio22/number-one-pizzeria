@@ -20,7 +20,6 @@ export default function PizzzList() {
         <PizzaCard />
         <PizzaCard />
         <PizzaCard />
-
         <PizzaCard />
         <PizzaCard />
         <PizzaCard />

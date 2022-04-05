@@ -16,26 +16,29 @@ export default function Order() {
       <div className={styles.left}>
         <div className={styles.row}>
           <table className={styles.table}>
-            <tr className={styles.tr}>
-              <th>Order ID</th>
-              <th>Customer</th>
-              <th>Address</th>
-              <th>Total</th>
-            </tr>
-            <tr>
-              <td>
-                <span className={styles.id}>23121329</span>
-              </td>
-              <td>
-                <span className={styles.name}>Jerson</span>
-              </td>
-              <td>
-                <span className={styles.Address}>Elto st. 23-02 LA</span>
-              </td>
-              <td>
-                <span className={styles.price}>$38.00</span>
-              </td>
-            </tr>
+            <tbody>
+              <tr className={styles.trTitle}>
+                <th>Order ID</th>
+                <th>Customer</th>
+                <th>Address</th>
+                <th>Total</th>
+              </tr>
+
+              <tr className={styles.tr}>
+                <td>
+                  <span className={styles.id}>23121329</span>
+                </td>
+                <td>
+                  <span className={styles.name}>Jerson</span>
+                </td>
+                <td>
+                  <span className={styles.address}>Elto st. 23-02 LA</span>
+                </td>
+                <td>
+                  <span className={styles.total}>$38.00</span>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
 
