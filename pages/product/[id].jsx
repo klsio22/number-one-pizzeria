@@ -28,9 +28,9 @@ export default function Product() {
 
       <div className={styles.right}>
         <h1 className={styles.title}>{pizza.name}</h1>
-        <span className={styles.price}>${pizza.price[size]}</span>
+        <span className={styles.price}>R${pizza.price[size]}</span>
         <p className={styles.desc}>{pizza.desc}</p>
-        <h3 className={styles.chooce}>Choose the size</h3>
+        <h3 className={styles.chooce}>Escolha o tamanho</h3>
 
         <div className={styles.sizes}>
           <div className={styles.size} onClick={() => setSize(0)}>
@@ -57,7 +57,7 @@ export default function Product() {
           </div>
         </div>
 
-        <h3 className={styles.close}>Choose additional ingredients</h3>
+        <h3 className={styles.close}>Escolha ingredientes adicionais</h3>
         <div className={styles.ingredients}>
           <div className={styles.option}>
             <input
@@ -66,7 +66,7 @@ export default function Product() {
               name='double'
               className={styles.checkbox}
             />
-            <label htmlFor='double'>Double ingredients</label>
+            <label htmlFor='double'>Ingredientes duplos</label>
           </div>
           <div className={styles.option}>
             <input
@@ -75,7 +75,7 @@ export default function Product() {
               name='extra'
               className={styles.checkbox}
             />
-            <label htmlFor='extra'>Extra Cheese</label>
+            <label htmlFor='extra'>Queijo extra</label>
           </div>
           <div className={styles.option}>
             <input
@@ -84,7 +84,7 @@ export default function Product() {
               name='spicy'
               className={styles.checkbox}
             />
-            <label htmlFor='spicy'>Spicy Sauce</label>
+            <label htmlFor='spicy'>Molho Picante</label>
           </div>
           <div className={styles.option}>
             <input
@@ -93,7 +93,7 @@ export default function Product() {
               name='garlic'
               className={styles.checkbox}
             />
-            <label htmlFor='garlic'>Garlic Souce</label>
+            <label htmlFor='garlic'>Molho de alho</label>
           </div>
 
           <div className={styles.add}>
@@ -103,7 +103,7 @@ export default function Product() {
               className={styles.quantity}
             />
             <a href={'/cart'}>
-              <button className={styles.button}>Add to Cart</button>
+              <button className={styles.button}>Adicionar ao carinho</button>
             </a>
           </div>
         </div>

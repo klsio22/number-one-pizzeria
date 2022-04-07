@@ -16,12 +16,12 @@ export default function Footer() {
       <div className={styles.item}>
         <div className={styles.card}>
           <h2 className={styles.numberOne}>
-            OH YES , WE DID .THE LAMA PIZZA , WELL BEKED SLICE OF PIZZA
+            OH SIM , NÓS DA NUMBER ONE PIZZERIA, NOSSAS FATIAS DE PIZZAS SÃO BEM ASSADA
           </h2>
         </div>
 
         <div className={styles.card}>
-          <h1 className={styles.title}>Find our Restaurants</h1>
+          <h1 className={styles.title}>Encontre nossos restaurantes</h1>
           <p className={styles.text}>
             1654.Ron Read #304
             <br /> NewYork , 85022
@@ -45,13 +45,9 @@ export default function Footer() {
         </div>
 
         <div className={styles.card}>
-          <h1 className={styles.title}>Working Hours</h1>
+          <h1 className={styles.title}>Funcionamento</h1>
           <p className={styles.text}>
-            Monday until Friday
-            <br /> 9:00 - 22:00
-          </p>
-          <p className={styles.text}>
-            Monday until Friday
+            Segunda a sexta
             <br /> 9:00 - 22:00
           </p>
         </div>

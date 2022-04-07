@@ -9,11 +9,11 @@ export default class cart extends Component {
           <table className={styles.table}>
             <tbody>
               <tr className={styles.trTitle}>
-                <th>Product</th>
-                <th>Name</th>
+                <th>Produto</th>
+                <th>Nome</th>
                 <th>Extras</th>
-                <th>Price</th>
-                <th>Quantity</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
                 <th>Total</th>
               </tr>
 
@@ -33,17 +33,17 @@ export default class cart extends Component {
                 </td>
                 <td>
                   <span className={styles.extras}>
-                    Double ingredients , spicy sauce
+                    Ingredientes duplos, molho picante
                   </span>
                 </td>
                 <td>
-                  <span className={styles.price}>$19.00</span>
+                  <span className={styles.price}>R$19.00</span>
                 </td>
                 <td>
-                  <span className={styles.quantity}>$2</span>
+                  <span className={styles.quantity}>2</span>
                 </td>
                 <td>
-                  <span className={styles.total}>$39.00</span>
+                  <span className={styles.total}>R$39.00</span>
                 </td>
               </tr>
 
@@ -63,17 +63,17 @@ export default class cart extends Component {
                 </td>
                 <td>
                   <span className={styles.extras}>
-                    Double ingredients , spicy sauce
+                  Ingredientes duplos, molho picante
                   </span>
                 </td>
                 <td>
-                  <span className={styles.price}>$19.00</span>
+                  <span className={styles.price}>R$19.00</span>
                 </td>
                 <td>
-                  <span className={styles.quantity}>$2</span>
+                  <span className={styles.quantity}>2</span>
                 </td>
                 <td>
-                  <span className={styles.total}>$39.00</span>
+                  <span className={styles.total}>R$39.00</span>
                 </td>
               </tr>
             </tbody>
@@ -81,18 +81,18 @@ export default class cart extends Component {
         </div>
         <div className={styles.right}>
           <div className={styles.wrapper}>
-            <h2 className={styles.h2}>CART TOTAL</h2>
+            <h2 className={styles.h2}>TOTAL</h2>
             <div className={styles.totalText}>
-              <b className={styles.totalTextTitle}>Subtotal:</b>$79.60
+              <b className={styles.totalTextTitle}>Subtotal:</b>R$79.60
             </div>
             <div className={styles.totalText}>
-              <b className={styles.totalTextTitle}>Discount:</b>$0.00
+              <b className={styles.totalTextTitle}>Desconto:</b>R$0.00
             </div>
             <div className={styles.totalText}>
-              <b className={styles.totalTextTitle}>Total:</b>$79.60
+              <b className={styles.totalTextTitle}>Total:</b>R$79.60
             </div>
             <a href={'/orders/21'}>
-              <button className={styles.button}>Checkout Now!</button>
+              <button className={styles.button}>Saindo agora!</button>
             </a>
           </div>
         </div>

@@ -18,9 +18,9 @@ export default function Order() {
           <table className={styles.table}>
             <tbody>
               <tr className={styles.trTitle}>
-                <th>Order ID</th>
-                <th>Customer</th>
-                <th>Address</th>
+                <th>Código do pedido</th>
+                <th>Cliente</th>
+                <th>Endereço</th>
                 <th>Total</th>
               </tr>
 
@@ -115,16 +115,16 @@ export default function Order() {
         <div className={styles.wrapper}>
           <h2 className={styles.h2}>CART TOTAL</h2>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Subtotal:</b>$79.60
+            <b className={styles.totalTextTitle}>Subtotal:</b>R$79.60
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Discount:</b>$0.00
+            <b className={styles.totalTextTitle}>Desconto:</b>R$0.00
           </div>
           <div className={styles.totalText}>
-            <b className={styles.totalTextTitle}>Total:</b>$79.60
+            <b className={styles.totalTextTitle}>Total:</b>R$79.60
           </div>
           <button disabled className={styles.button}>
-            PAID
+            PAGAR
           </button>
         </div>
       </div>

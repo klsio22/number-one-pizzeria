@@ -14,33 +14,47 @@ export default function NavBar() {
           />
         </div>
         <div className={styles.texts}>
-          <div className={styles.text}>ORDER NOW</div>
+          <div className={styles.text}>PEÇA AGORA</div>
           <div className={styles.text}>021 658 684</div>
         </div>
       </div>
 
       <div className={styles.item}>
         <ul className={styles.list}>
-          <li className={styles.listItem}>Homepage</li>
-          <li className={styles.listItem}>Protucts</li>
-          <li className={styles.listItem}>Menu</li>
+          <a href={'/'}>
+            <li className={styles.listItem}>Pagina inicial</li>
+          </a>
 
-          <Image className={styles.logo} src='/img/logo1.png' alt='Logo' width='160px' height='69px' />
+          <a href={'/product/213'}>
+            <li className={styles.listItem}>Produtos</li>
+          </a>
 
-          <li className={styles.listItem}>Events</li>
+          <a href={'/'}>
+            <Image
+              className={styles.logo}
+              src='/img/logo1.png'
+              alt='Logo'
+              width='160px'
+              height='69px'
+            />
+          </a>
+          
+          <li className={styles.listItem}>Eventos</li>
           <li className={styles.listItem}>Blog</li>
-          <li className={styles.listItem}>Contact</li>
+          <li className={styles.listItem}>Contato</li>
         </ul>
       </div>
 
       <div className={styles.item}>
         <div className={styles.miniCart}>
-          <Image
-            src='/img/cart.png'
-            alt='Image cart'
-            width='30'
-            height='30px'
-          />
+          <a href={'/cart'}>
+            <Image
+              src='/img/cart.png'
+              alt='Image cart'
+              width='30'
+              height='30px'
+            />
+          </a>
 
           <div className={styles.counter}>2</div>
         </div>
