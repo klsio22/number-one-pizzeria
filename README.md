@@ -15,11 +15,11 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ✈️ Objetivo da aplicação é criar uma mini aplicação react com nextjs e também exercitar algumas aplicações de bibliotecas nesse tipo de projeto
 
-✈️ Link do projeto na Vercel: [Number one Pizzeria]()
+✈️ Link do projeto na Vercel: [Number one Pizzeria](https://number-one-pizzeria.vercel.app/)
 
 ## 🔖 Inspiração
 
-Você pode visualizar a inspiração do projeto por meio [desse link]().
+Você pode visualizar a inspiração do projeto por meio [desse link](https://www.youtube.com/watch?v=vIxGDq1SPZQ).
 
 ##  📜 Para executar
 
