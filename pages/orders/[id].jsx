@@ -35,7 +35,7 @@ export default function Order() {
                   <span className={styles.address}>Elto st. 23-02 LA</span>
                 </td>
                 <td>
-                  <span className={styles.total}>$38.00</span>
+                  <span className={styles.total}>R$38.00</span>
                 </td>
               </tr>
             </tbody>

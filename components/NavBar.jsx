@@ -22,7 +22,7 @@ export default function NavBar() {
       <div className={styles.item}>
         <ul className={styles.list}>
           <a href={'/'}>
-            <li className={styles.listItem}>Pagina inicial</li>
+            <li className={styles.listItem}>Página inicial</li>
           </a>
 
           <a href={'/product/213'}>
