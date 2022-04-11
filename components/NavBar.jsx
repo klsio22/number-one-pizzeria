@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from '/styles/Navbar.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
+
 export default function NavBar() {
   return (
     <div className={styles.container}>
@@ -21,24 +23,29 @@ export default function NavBar() {
 
       <div className={styles.item}>
         <ul className={styles.list}>
-          <a href={'/'}>
-            <li className={styles.listItem}>Página inicial</li>
-          </a>
+          <Link href={'/'}>
+            <a>
+              <li className={styles.listItem}>Página inicial</li>
+            </a>
+          </Link>
 
-          <a href={'/product/213'}>
-            <li className={styles.listItem}>Produtos</li>
-          </a>
+          <Link href={'/product/213'}>
+            <a>
+              <li className={styles.listItem}>Produtos</li>
+            </a>
+          </Link>
 
-          <a href={'/'}>
-            <Image
-              className={styles.logo}
-              src='/img/logo1.png'
-              alt='Logo'
-              width='160px'
-              height='69px'
-            />
-          </a>
-          
+          <Link href={'/'}>
+            <a>
+              <Image
+                className={styles.logo}
+                src='/img/logo1.png'
+                alt='Logo'
+                width='160px'
+                height='69px'
+              />
+            </a>
+          </Link>
           <li className={styles.listItem}>Eventos</li>
           <li className={styles.listItem}>Blog</li>
           <li className={styles.listItem}>Contato</li>
@@ -47,15 +54,16 @@ export default function NavBar() {
 
       <div className={styles.item}>
         <div className={styles.miniCart}>
-          <a href={'/cart'}>
-            <Image
-              src='/img/cart.png'
-              alt='Image cart'
-              width='30'
-              height='30px'
-            />
-          </a>
-
+          <Link href={'/cart'}>
+            <a>
+              <Image
+                src='/img/cart.png'
+                alt='Image cart'
+                width='30'
+                height='30px'
+              />
+            </a>
+          </Link>
           <div className={styles.counter}>2</div>
         </div>
       </div>

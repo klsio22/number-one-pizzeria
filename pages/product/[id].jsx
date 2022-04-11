@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import { useState } from 'react';
 import styles from '/styles/Product.module.scss';
+import Link from 'next/link';
 
 export default function Product() {
   const [size, setSize] = useState(0);
@@ -102,9 +103,11 @@ export default function Product() {
               defaultValue={1}
               className={styles.quantity}
             />
-            <a href={'/cart'}>
-              <button className={styles.button}>Adicionar ao carinho</button>
-            </a>
+            <Link>
+              <a href={'/cart'}>
+                <button className={styles.button}>Adicionar ao carinho</button>
+              </a>
+            </Link>
           </div>
         </div>
       </div>
